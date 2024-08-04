@@ -1,0 +1,47 @@
+@import '../../styles/_variables';
+
+.custom-button {
+  color: $main-dark;
+  text-decoration: none;
+  font-size: 16vw * $px;
+  line-height: 24vw * $px;
+  font-family: "Open Sans", sans-serif;
+  padding: 8vw * $px 20vw * $px;
+  border-radius: 60vw * $px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1vw * $px solid $main-dark;
+  font-weight: 600;
+  letter-spacing: -0.2vw * $px;
+  background-color: transparent;
+
+  .icon {
+    margin-left: 15vw * $px;
+    width: 24vw * $px;
+    height: 24vw * $px;
+    background-color: $main-purple;
+    border-radius: 50%;
+  }
+
+  &:hover {
+    font-weight: 700;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .custom-button {
+    font-size: 16vw * $pxm;
+    line-height: 24vw * $pxm;
+    padding: 10vw * $pxm 20vw * $pxm;
+    border-radius: 60vw * $pxm;
+    border-width: 1vw * $pxm;
+    letter-spacing: -0.2vw * $pxm;
+  
+    .icon {
+      margin-left: 15vw * $pxm;
+      width: 24vw * $pxm;
+      height: 24vw * $pxm;
+    }
+  }
+}

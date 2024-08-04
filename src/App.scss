@@ -1,0 +1,31 @@
+@import './styles/variables';
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #61dafb;
+  padding: 20vw * $px;
+  color: white;
+}
+
+.container {
+  max-width: 1256vw * $px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 18vw * $px;
+  box-sizing: border-box;
+}
+
+@media (max-width: $mobile-width) {
+
+  .App-header {
+    padding: 0 20vw * $pxm;
+  }
+
+  .container {
+    max-width: unset;
+    padding: 0 18vw * $pxm;
+  }
+}

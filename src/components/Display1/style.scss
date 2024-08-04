@@ -1,0 +1,143 @@
+@import '../../styles/variables';
+
+.display1 {
+  padding: 80vw * $px 0 59vw * $px;
+  margin-top: 101vw * $px;
+  // max-width: 1220vw * $px;
+  overflow: hidden;
+
+  .left {
+    max-width: 625vw * $px;
+    width: 52%;
+    padding: 78vw * $px 0 101vw * $px;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .title {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    line-height: 150%;
+    color: $main-purple;
+    text-align: left;
+
+    h1 {
+      font-size: 103vw * $px;
+      line-height: 150%;
+      margin: 0;
+    }
+
+    .subtitle {
+      font-size: 70vw * $px;
+      line-height: 150%;
+      position: relative;
+    }
+
+    span {
+      font-size: 70vw * $px;
+      color: $main-dark;
+    }
+    .icon {
+      position: absolute;
+      top: 0;
+      left: -30vw * $px;
+    }
+
+    .text {
+      margin: 15vw * $px 0 0;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 700;
+      font-size: 25vw * $px;
+      line-height: 150%;
+      color: $main-dark;
+    }
+  }
+
+  .link-block {
+    margin-top: 50vw * $px;
+    text-align: left;
+
+    .custom-button {
+      display: inline-flex;
+    }
+  }
+
+  .right {
+    position: absolute;
+    top: 0;
+    right: -25%;
+
+    img {
+      max-width: 100%;
+      height: 600vw * $px;
+    }
+  }
+
+  .custom-button {
+    padding-top: 15vw * $px;
+    padding-bottom: 15vw * $px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 8vw * $pxm 0 50vw * $pxm;
+    margin-top: 0;
+
+    .left {
+      max-width: unset;
+      width: 100%;
+    }
+
+    .title {
+      line-height: 150%;
+      text-align: center;
+  
+      h1 {
+        font-size: 60vw * $pxm;
+        margin: 0;
+      }
+  
+      .subtitle {
+        font-size: 30vw * $pxm;
+        line-height: 1;
+      }
+  
+      span {
+        font-size: 45vw * $pxm;
+        line-height: 1;
+      }
+      .icon {
+        display: none;
+      }
+  
+      .text {
+        margin-top: 25vw * $pxm;
+        font-weight: 600;
+        font-size: 18vw * $pxm;
+        text-align: center;
+      }
+    }
+  
+    .link-block {
+      margin-top: 40vw * $pxm;
+      text-align: center;
+    }
+  
+    .right {
+      position: relative;
+      top: unset;
+      right: unset;
+      margin-top: 40vw * $pxm;
+
+      img {
+        height: auto;
+      }
+    }
+
+    .custom-button {
+      padding-top: 10vw * $pxm;
+      padding-bottom: 10vw * $pxm;
+    }
+  }
+}

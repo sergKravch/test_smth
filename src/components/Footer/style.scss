@@ -1,0 +1,128 @@
+@import '../../styles/_variables';
+
+.footer {
+  position: relative;
+  width: 100%;
+  padding: 105vw * $px 0 0;
+
+  &_content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 50vw * $px 53vw * $px 68vw * $px 20vw * $px;
+    background-color: #CECECE;
+    border-radius: 30vw * $px;
+  }
+
+  .left-side {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 43vw * $px;
+    width: 410vw * $px;
+    flex-shrink: 0;
+  }
+
+  .logo-wrap {
+    width: 40vw * $px;
+    height: 40vw * $px;
+  }
+
+  &-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 11vw * $px;
+
+    .item-block {
+      text-align: left;
+    }
+  }
+
+  .nav-title {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16vw * $px;
+    line-height: 1.2;
+    color: $main-dark;
+    text-decoration: none;
+  }
+
+  .right-side {
+    width: 640vw * $px;
+
+    .nav-title {
+      font-size: 12vw * $px;
+      text-align: left;
+    }
+
+    .text {
+      margin: 10vw * $px 0;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+      font-size: 12vw * $px;
+      color: $main-dark;
+      text-align: left;
+    }
+
+    .copyright {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 14vw * $px;
+      color: $main-dark;
+      text-align: right;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .footer {
+    margin-top: 50vw * $pxm;
+    padding: 0;
+    background-color: #CECECE;
+
+    &_content {
+      flex-direction: column;
+      row-gap: 30vw * $pxm;
+      padding: 20vw * $pxm 0 55vw * $pxm;
+      background-color: transparent;
+      border-radius: 0;
+    }
+
+    .left-side {
+      column-gap: 43vw * $px;
+      width: 100%;
+      flex-direction: column;
+      row-gap: 15vw * $pxm;
+    }
+  
+    .logo-wrap {
+      width: 40vw * $pxm;
+      height: 40vw * $pxm;
+    }
+
+    .footer-nav {
+      row-gap: 15vw * $pxm;
+    }
+
+    .nav-title {
+      font-size: 12vw * $pxm;
+    }
+
+    .right-side {
+      width: 100%;
+  
+      .nav-title {
+        font-size: 12vw * $pxm;
+      }
+  
+      .text {
+        margin: 15vw * $pxm 0;
+        font-size: 12vw * $pxm;
+      }
+  
+      .copyright {
+        font-size: 12vw * $pxm;
+        text-align: left;
+      }
+    }
+  }
+}

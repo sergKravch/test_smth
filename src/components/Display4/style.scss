@@ -1,0 +1,102 @@
+@import '../../styles/_variables';
+
+.display4 {
+  position: relative;
+  width: 100%;
+  padding: 105vw * $px 0 105vw * $px;
+
+  &__content {
+    text-align: left;
+
+    .title {
+      font-family: "Inter", sans-serif;
+      font-weight: 700;
+      font-size: 70vw * $px;
+      line-height: 1;
+      color: $main-purple;
+      margin-bottom: 15vw * $px;
+    }
+
+    .subtitle {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 700;
+      font-size: 25vw * $px;
+      line-height: 1.5;
+      color: $main-dark;
+    }
+  }
+
+  .grid-container {
+    margin-top: 70vw * $px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70vw * $px;
+
+    .title {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 700;
+      font-size: 16vw * $px;
+      line-height: 1.5;
+      color: $main-dark;
+      margin: 20vw * $px 0 8vw * $px;
+    }
+
+    .text {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      font-size: 16vw * $px;
+      line-height: 1.5;
+      color: $main-dark;
+    }
+
+  }
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60vw * $px;
+    height: 60vw * $px;
+    background-color: $main-purple;
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .display4 {
+    padding: 50vw * $pxm 0;
+  
+    &__content {
+  
+      .title {
+        font-size: 30vw * $pxm;
+        margin-bottom: 15vw * $pxm;
+      }
+  
+      .subtitle {
+        font-size: 18vw * $pxm;
+        line-height: 1.5;
+      }
+    }
+  
+    .grid-container {
+      margin-top: 40vw * $pxm;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 40vw * $pxm;
+  
+      .title {
+        font-size: 16vw * $pxm;
+        margin: 20vw * $pxm 0 8vw * $pxm;
+      }
+  
+      .text {
+        font-size: 16vw * $pxm;
+      }
+    }
+  
+    .icon {
+      width: 50vw * $pxm;
+      height: 50vw * $pxm;
+    }
+  }
+}

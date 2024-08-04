@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import DisplayFirst from './components/Display1/component';
+import DisplaySecond from './components/Display2/component';
+import DisplayThird from './components/Display3/component';
+import DisplayFourth from './components/Display4/component';
+import DisplayFifth from './components/Display5/component';
+import DisplaySixth from './components/Display6/component';
+import Header from './components/Header/component';
+import Footer from './components/Footer/Footer';
+import './App.scss';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <DisplayFirst />
+      <DisplaySecond />
+      <DisplayThird />
+      <DisplayFourth />
+      <DisplayFifth />
+      <DisplaySixth />
+      <Footer />
     </div>
   );
 }
