@@ -22,6 +22,10 @@
     height: 24vw * $px;
     background-color: $main-purple;
     border-radius: 50%;
+
+    img {
+      width: 100%;
+    }
   }
 
   &:hover {

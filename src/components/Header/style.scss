@@ -1,16 +1,16 @@
 @import '../../styles/_variables';
 
 .header {
-  padding: 0 20px;
+  padding: 0 20vw * $px;
 
   .container {
-    max-width: 1256px;
+    max-width: 1256vw * $px;
   }
 
   .nav {
-    padding: 20px;
+    padding: 20vw * $px;
     background-color: #fff;
-    border-radius: 60px;
+    border-radius: 60vw * $px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -24,8 +24,8 @@
   }
 
   &-logo {
-    width: 40px;
-    height: 40px;
+    width: 40vw * $px;
+    height: 40vw * $px;
   }
 
   &-menu {
@@ -35,8 +35,9 @@
       padding: 0;
       margin: 0;
       display: flex;
+      align-items: center;
       justify-content: center;
-      // gap: 40px;
+      // gap: 40vw * $px;
     }
   
     li {
@@ -45,11 +46,11 @@
       .nav-item {
         color: $main-dark;
         text-decoration: none;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 16vw * $px;
+        line-height: 24vw * $px;
         font-family: "Open Sans", sans-serif;
-        padding: 8px 20px;
-        border-radius: 60px;
+        padding: 8vw * $px 20vw * $px;
+        border-radius: 60vw * $px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -61,7 +62,13 @@
       }
 
       &.last {
-        margin-left: 20px;
+        margin-left: 20vw * $px;
+
+        .custom-button {
+          .icon {
+            background-color: #ACA3FD;
+          }
+        }
       }
     }
   }
@@ -71,16 +78,35 @@
   }
 
   .language-switcher {
+    position: relative;
   
     button {
-      margin-left: 10px;
+      margin: 0;
       background: none;
       border: none;
       cursor: pointer;
-      font-size: 16px;
+      font-size: 16vw * $pxm;
+      text-decoration: none;
+      transition: all 0.5s ease;
+    }
 
-      &:hover {
-        text-decoration: underline;
+    svg {
+      transition: all 0.5s ease;
+      margin-left: 3px;
+    }
+
+    .lang-hide {
+      display: none;
+      position: absolute;
+    }
+
+    &:hover {
+      svg {
+        transform: rotate(-180deg);
+      }
+
+      .lang-hide {
+        display: block;
       }
     }
   }
@@ -88,38 +114,47 @@
   .burger {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 5vw * $pxm;
     cursor: pointer;
 
     span {
-      width: 25px;
-      height: 3px;
+      width: 25vw * $pxm;
+      height: 3vw * $pxm;
       background: #333;
       transition: all 0.3s;
     }
 
     &.open span:nth-child(1) {
-      transform: rotate(45deg) translateY(6px);
+      transform: rotate(45deg) translateY(6vw * $pxm);
     }
     &.open span:nth-child(2) {
-      transform: rotate(-45deg) translateY(-6px);
+      transform: rotate(-45deg) translateY(-6vw * $pxm);
     }
   }
 
   @media (min-width: $mobile-width) {
     position: fixed;
     width: 100%;
-    top: 21px;
+    top: 21vw * $px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 99;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 20px 0;
+    padding: 20vw * $pxm 0;
     position: relative;
     top: unset;
     border-bottom: 1px solid rgba(98, 72, 175, 0.2);
+
+    .container {
+      max-width: unset;
+    }
+
+    &-logo {
+      width: 40vw * $pxm;
+      height: 40vw * $pxm;
+    }
 
     .burger {
       z-index: 2;
@@ -127,6 +162,7 @@
     
     .nav {
       display: none;
+      padding: 20vw * $pxm;
       position: absolute;
       top: 0;
       left: 0;
@@ -138,6 +174,20 @@
 
       &.open {
         display: block;
+      }
+
+      li {
+    
+        .nav-item {
+          font-size: 16vw * $pxm;
+          line-height: 24vw * $pxm;
+          padding: 8vw * $pxm 20vw * $pxm;
+          border-radius: 60vw * $pxm;
+        }
+  
+        &.last {
+          margin-left: 20vw * $pxm;
+        }
       }
     }
 
@@ -152,7 +202,7 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      gap: 34px;
+      gap: 34vw * $pxm;
     }
   }
 }

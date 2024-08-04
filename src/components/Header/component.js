@@ -27,8 +27,14 @@ const Header = () => {
             </div>
             <div className='mobile-content'>
               <div className="language-switcher">
-                <button>UA</button>
-                <button>EN</button>
+                <button className='current'>
+                  EN
+                  <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L6.15152 6L11 1" stroke="#313131" strokeOpacity="0.7" stroke-width="1.5"/>
+                  </svg>
+                </button>
+                <button className='lang-hide'>UA</button>
+
               </div>
               <div className={`burger ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
                 <span></span>
