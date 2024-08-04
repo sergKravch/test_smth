@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/%7Brepository-name%7D/static/css/main.994fb37d.css",
+    "main.js": "/%7Brepository-name%7D/static/js/main.d38a7277.js",
+    "static/js/453.8a048369.chunk.js": "/%7Brepository-name%7D/static/js/453.8a048369.chunk.js",
+    "static/media/img_6.png": "/%7Brepository-name%7D/static/media/img_6.fb9a60ebe7191a6cbfd7.png",
+    "static/media/img_1.png": "/%7Brepository-name%7D/static/media/img_1.c7bd89ac692618d63e3b.png",
+    "static/media/bg_2.png": "/%7Brepository-name%7D/static/media/bg_2.28c2b66319e2320ada8b.png",
+    "static/media/slide_bg.png": "/%7Brepository-name%7D/static/media/slide_bg.19980ad4208c684124d1.png",
+    "static/media/slide3.png": "/%7Brepository-name%7D/static/media/slide3.2b592d3a4660e91ba85b.png",
+    "static/media/bg_1.png": "/%7Brepository-name%7D/static/media/bg_1.ddbf17ddea7c5ad94a94.png",
+    "static/media/slide2.png": "/%7Brepository-name%7D/static/media/slide2.2a3561b9bb7deb634fbe.png",
+    "static/media/slide4.png": "/%7Brepository-name%7D/static/media/slide4.f992f75c899b4214aa19.png",
+    "static/media/slide1.png": "/%7Brepository-name%7D/static/media/slide1.3367802d525aebfae59d.png",
+    "static/media/slide_bg_mob.png": "/%7Brepository-name%7D/static/media/slide_bg_mob.dfeae701e47870efa4be.png",
+    "static/media/bg_3.png": "/%7Brepository-name%7D/static/media/bg_3.3d5b8e5743c9ee9c65b3.png",
+    "static/media/slick.svg": "/%7Brepository-name%7D/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/%7Brepository-name%7D/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/%7Brepository-name%7D/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/%7Brepository-name%7D/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/logo.svg": "/%7Brepository-name%7D/static/media/logo.e6c55076560232293800dde2a8ca84dd.svg",
+    "index.html": "/%7Brepository-name%7D/index.html",
+    "static/media/arrow-right.svg": "/%7Brepository-name%7D/static/media/arrow-right.71be3865d7e54614d29fb5421129991d.svg",
+    "main.994fb37d.css.map": "/%7Brepository-name%7D/static/css/main.994fb37d.css.map",
+    "main.d38a7277.js.map": "/%7Brepository-name%7D/static/js/main.d38a7277.js.map",
+    "453.8a048369.chunk.js.map": "/%7Brepository-name%7D/static/js/453.8a048369.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.994fb37d.css",
+    "static/js/main.d38a7277.js"
+  ]
+}
